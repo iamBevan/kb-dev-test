@@ -136,13 +136,6 @@ const BottomLink = styled.div`
 		align-items: center;
 		height: 50px;
 		position: relative;
-
-		span {
-			display: none;
-
-			svg {
-			}
-		}
 	}
 `
 

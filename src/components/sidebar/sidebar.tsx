@@ -49,7 +49,7 @@ const Sidebar: React.FC<SideBarProps> = ({ mobile }) => {
 			{mobile && (
 				<Burger>
 					<IconButton
-						style={menuIconStyle}
+						style={{ ...menuIconStyle, display: "visible" }}
 						aria-label='navigation-menu'
 						component='span'
 						onClick={() => setOpen(!open)}
@@ -61,7 +61,7 @@ const Sidebar: React.FC<SideBarProps> = ({ mobile }) => {
 			{mobile && (
 				<Options>
 					<IconButton
-						style={menuIconStyle}
+						style={{ ...menuIconStyle, display: "visible" }}
 						aria-label='menu'
 						component='span'
 					>
@@ -72,43 +72,43 @@ const Sidebar: React.FC<SideBarProps> = ({ mobile }) => {
 			<Nav isOpen={open}>
 				<Menu>
 					<ListItem>
-						<Link to='/dashboard'>
+						<Link to='/dashboard' onClick={() => setOpen(false)}>
 							<Dashboard style={menuIconStyle} />
 							<MenuText>Dashboard</MenuText>
 						</Link>
 					</ListItem>
 					<ListItem>
-						<Link to='/files'>
+						<Link to='/files' onClick={() => setOpen(false)}>
 							<Description style={menuIconStyle} />
 							<MenuText>Files</MenuText>
 						</Link>
 					</ListItem>
 					<ListItem>
-						<Link to='/policies'>
+						<Link to='/policies' onClick={() => setOpen(false)}>
 							<Policy style={menuIconStyle} />
 							<MenuText>Polices</MenuText>
 						</Link>
 					</ListItem>
 					<ListItem>
-						<Link to='/users'>
+						<Link to='/users' onClick={() => setOpen(false)}>
 							<Person style={menuIconStyle} />
 							<MenuText>Users</MenuText>
 						</Link>
 					</ListItem>
 					<ListItem>
-						<Link to='/groups'>
+						<Link to='/groups' onClick={() => setOpen(false)}>
 							<People style={menuIconStyle} />
 							<MenuText>Groups</MenuText>
 						</Link>
 					</ListItem>
 					<ListItem>
-						<Link to='/audit'>
+						<Link to='/audit' onClick={() => setOpen(false)}>
 							<VerifiedUser style={menuIconStyle} />
 							<MenuText>Audit</MenuText>
 						</Link>
 					</ListItem>
 					<ListItem>
-						<Link to='/applications'>
+						<Link to='/applications' onClick={() => setOpen(false)}>
 							<Apps style={menuIconStyle} />
 							<MenuText>Applications</MenuText>
 						</Link>
