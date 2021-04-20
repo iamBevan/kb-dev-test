@@ -20,7 +20,7 @@ const Nav = styled.nav<NavProps>`
 	}
 `
 
-const Menu = styled.ul`
+const List = styled.ul`
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -83,7 +83,7 @@ export default styled(NavLink)`
 	}
 `
 
-const MenuText = styled.p`
+const ListText = styled.p`
 	margin-left: 10px;
 	@media (max-width: 412px) {
 		margin: 0;
@@ -151,8 +151,8 @@ export {
 	BottomLink,
 	Burger,
 	Content,
-	Menu,
-	MenuText,
+	List,
+	ListText,
 	Wrapper,
 	Nav,
 	ListItem,

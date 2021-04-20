@@ -14,18 +14,18 @@ body {
 }
 
 a:link {
-	color: #fff;
+	color: var(--light-primary);
 	text-decoration: none;
 }
 
 a:visited {
-	color: #fff;
+	color: var(--light-primary);
 }
 
 a:hover {
-	color: #fff;
+	color: var(--light-primary);
 }
 
 a:active {
-	color: #fff;
+	color: var(--light-primary);
 }

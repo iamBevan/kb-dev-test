@@ -20,8 +20,8 @@ import {
 	BottomLink,
 	Burger,
 	Content,
-	Menu,
-	MenuText,
+	List,
+	ListText,
 	Nav,
 	Wrapper,
 	ListItem,
@@ -70,50 +70,50 @@ const Sidebar: React.FC<SideBarProps> = ({ mobile }) => {
 				</Options>
 			)}
 			<Nav isOpen={open}>
-				<Menu>
+				<List>
 					<ListItem>
 						<Link to='/dashboard' onClick={() => setOpen(false)}>
 							<Dashboard style={menuIconStyle} />
-							<MenuText>Dashboard</MenuText>
+							<>Dashboard</>
 						</Link>
 					</ListItem>
 					<ListItem>
 						<Link to='/files' onClick={() => setOpen(false)}>
 							<Description style={menuIconStyle} />
-							<MenuText>Files</MenuText>
+							<ListText>Files</ListText>
 						</Link>
 					</ListItem>
 					<ListItem>
 						<Link to='/policies' onClick={() => setOpen(false)}>
 							<Policy style={menuIconStyle} />
-							<MenuText>Polices</MenuText>
+							<ListText>Polices</ListText>
 						</Link>
 					</ListItem>
 					<ListItem>
 						<Link to='/users' onClick={() => setOpen(false)}>
 							<Person style={menuIconStyle} />
-							<MenuText>Users</MenuText>
+							<ListText>Users</ListText>
 						</Link>
 					</ListItem>
 					<ListItem>
 						<Link to='/groups' onClick={() => setOpen(false)}>
 							<People style={menuIconStyle} />
-							<MenuText>Groups</MenuText>
+							<ListText>Groups</ListText>
 						</Link>
 					</ListItem>
 					<ListItem>
 						<Link to='/audit' onClick={() => setOpen(false)}>
 							<VerifiedUser style={menuIconStyle} />
-							<MenuText>Audit</MenuText>
+							<ListText>Audit</ListText>
 						</Link>
 					</ListItem>
 					<ListItem>
 						<Link to='/applications' onClick={() => setOpen(false)}>
 							<Apps style={menuIconStyle} />
-							<MenuText>Applications</MenuText>
+							<ListText>Applications</ListText>
 						</Link>
 					</ListItem>
-				</Menu>
+				</List>
 				<Content>&nbsp;</Content>
 				{!open && (
 					<BottomOptions>
