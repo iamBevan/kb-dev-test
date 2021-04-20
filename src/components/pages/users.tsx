@@ -8,7 +8,7 @@ const Wrapper = styled.main`
 	flex: 1;
 
 	@media (max-width: 412px) {
-		padding: 0;
+		padding: 40px 10px;
 	}
 `
 
